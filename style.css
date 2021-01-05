@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	background: -webkit-linear-gradient(to right,#ff99dc,#fe944a);
+  background: linear-gradient(to right,#ff99dc,#fe944a);
+	-webkit-animation: gradientBG 10s ease infinite;
+	animation: gradientBG 10s ease infinite;
+
+}
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+}
+
+header {
+	background-color: #00AEEA;
+	color: #eee;
+	text-align: center;
+	height: 60px;
+	padding-top: 5px;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+p {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;	color: #444;
+    font-weight: 850;
+  	font-size: 2em;
+	text-align: center;
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+a {
+	color: #00AEEA;
+	text-decoration: none;
+}
+a:hover {
+	color: #00AEEA;
+}
+a:visited {
+	color: #00AEEA;
+}
+
+#tab-tic-tac-toe {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	font-size: 4em;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;	color: #444;
+  background: -webkit-linear-gradient(to left,#dfd18e, #0cd0f3);
+  background: linear-gradient(to left,#dfd18e, #0cd0f3); 	width: 360px;
+  font-weight: 850;
+	height: 350px;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid #CECECE;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #CCC;
+}
+
+#tab-tic-tac-toe td {
+	border-collapse:collapse;
+	border-left: 5px solid #CCC;
+	border-bottom: 5px solid #CCC;
+}
+
+#tab-tic-tac-toe td:first-child {
+	border-left: none;
+}
+
+#tab-tic-tac-toe tr:last-child td {
+	border-bottom: none;
+}
+
+/*Cells*/
+#tab-tic-tac-toe td {
+	cursor: pointer;
+	height: 95px;
+	width: 95px;
+}
+
+#tab-tic-tac-toe td:hover {
+	background: white;
+}
+
+#bnt-restart {
+	display: block;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	background: #00AEEA;
+	font-size: 1.5em;
+	color: #FFF;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#bnt-restart:hover {
+	background: #1DC5FF;
+}
+
+#bnt-restart:active {
+	background: #0787B3;
+}
+
+#bnt-restart:disabled {
+	color: #444;
+	background: #CECECE;
+}
